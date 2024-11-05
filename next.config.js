@@ -1,11 +1,10 @@
 /** @type {import('next').NextConfig} */
 const isProd = process.env.NODE_ENV === 'production';
 const nextConfig = {
-  
-
   output: 'export',
-  basePath: isProd ? '/aiSites.github.io' : '',
-  assetPrefix: isProd ? '/aiSites.github.io' : '',
+  // basePath와 assetPrefix를 빈 문자열로 설정
+  basePath: '', // 빈 문자열로 설정
+  assetPrefix: '', // 빈 문자열로 설정
   images: {
     domains: ['hebbkx1anhila5yf.public.blob.vercel-storage.com'],
     unoptimized: true,
