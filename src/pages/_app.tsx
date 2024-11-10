@@ -125,7 +125,7 @@ export default function Component() {
       <meta name="description" content="미래전략포럼에 귀하를 초대합니다." />
       <meta property="og:title" content="Future Strategy Forum 2024" />
       <meta property="og:description" content="미래전략포럼에 귀하를 초대합니다." />
-      <meta property="og:image" content="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%EB%8C%80%EC%A7%80%201%20%EC%82%AC%EB%B3%B8%209@3x-8-bQy8Fo0GeUn8I9hVfgZbYcpbOXzPFj.png" />
+      <meta property="og:image" content="./dcsLogo.png" />
     </Head>
     <div className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-blue-900 text-white relative overflow-hidden">
       <canvas id="backgroundCanvas" className="absolute top-0 left-0 w-full h-full pointer-events-none"></canvas>
