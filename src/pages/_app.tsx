@@ -526,13 +526,13 @@ export default function Component() {
               className="w-full h-auto object-contain"
             />
           </div>
-          <div className="w-full max-w-[200px] flex items-center justify-center">
+          <div className="w-full h-full max-w-[200px] flex items-center justify-center">
             <Image 
               src="https://daecheongse.co.kr/sponsor01.png" 
               alt="YA 청년기획" 
               width={200} 
-              height={150}
-              className="w-full h-auto object-contain" 
+              height={200}
+              className="w-full h-full object-cotain" 
             />
           </div>
           <div className="w-full h-full max-w-[200px] flex items-center justify-center">
