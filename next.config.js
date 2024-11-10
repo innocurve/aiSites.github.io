@@ -7,6 +7,7 @@ const nextConfig = {
   assetPrefix: '', // 빈 문자열로 설정
   images: {
     domains: ['hebbkx1anhila5yf.public.blob.vercel-storage.com'],
+    domains: ['daecheongse.co.kr'],
     unoptimized: true,
   },
 };
