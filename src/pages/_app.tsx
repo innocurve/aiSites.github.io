@@ -169,7 +169,7 @@ export default function Component() {
           <h3 className="text-xl md:text-2xl font-bold mb-4">
           {language === 'ko' ? '미래전략포럼에 귀하를 초대합니다.' : language === 'en' ? 'We invite you to the Future Strategy Forum.' : 'フューチャー・ストラテジー・フォーラムにご招待します。'}
          </h3>
-          <p className="text-xl text-gray-400">2024. 12. 03, 19:00</p>
+          <p className="text-xl text-gray-400 font-bold">2024. 12. 03, 19:00</p>
         </div>
 
      {/* Introduction Section */}
@@ -191,71 +191,198 @@ export default function Component() {
             </p>
           </div>
         </section>
+ {/* Keynote Speakers Section */}
+ <section className="py-16">
+      <div className="max-w-4xl mx-auto px-4">
+        <h2 className="text-3xl font-bold mb-8 text-center">
+          {language === 'ko' ? '기조연설' : language === 'en' ? 'Keynote Speakers' : '基調講演'}
+        </h2>
+        <Card className="bg-gray-800 bg-opacity-50 border-gray-700 backdrop-blur-sm">
+          <CardContent className="p-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-4">
+              <div className="text-center">
+                <div className="w-48 h-48 mx-auto mb-4 overflow-hidden rounded-full">
+                  <Image
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-gdJgWbhjngLZRsgavDJhT5dSwFd3cu.png"
+                    alt="문형남 교수"
+                    width={192}
+                    height={192}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <h4 className="text-xl font-semibold mb-2 text-white">
+                  {language === 'ko' ? '문형남' : language === 'en' ? 'Moon Hyung-nam' : 'ムン・ヒョンナム'}
+                </h4>
+                <div className="space-y-1">
+                  <p className="text-sky-300">
+                    {language === 'ko' 
+                      ? '숙명여대 글로벌융합대학 학장' 
+                      : language === 'en' 
+                      ? 'Dean, College of Global Convergence, Sookmyung Women\'s University' 
+                      : '淑明女子大学グローバル融合大学学長'}
+                  </p>
+                  <p className="text-sky-300">
+                    {language === 'ko' 
+                      ? '한국AI 교육협회 회장' 
+                      : language === 'en' 
+                      ? 'President, Korea AI Education Association' 
+                      : '韓国AI教育協会会長'}
+                  </p>
+                  <div className="mt-4 text-sm text-gray-400 space-y-1">
+                    <p>{language === 'ko' ? '성균관대학교 대학원 경영학 박사' : language === 'en' ? 'Ph.D. in Business Administration, Sungkyunkwan University' : '成均館大学大学院経営学博士'}</p>
+                    <p>{language === 'ko' ? 'KAIST 공학 박사 수료' : language === 'en' ? 'Completed Ph.D. coursework in Engineering, KAIST' : 'KAIST工学博士課程修了'}</p>
+                    <p>{language === 'ko' ? '고려대학교 대학원 경영학 석사' : language === 'en' ? 'M.B.A., Korea University' : '高麗大学大学院経営学修士'}</p>
+                    <p>{language === 'ko' ? '성균관대학교 경영학 학사' : language === 'en' ? 'B.B.A., Sungkyunkwan University' : '成均館大学経営学学士'}</p>
+                  </div>
+                </div>
+              </div>
+              <div className="text-center">
+                <div className="w-48 h-48 mx-auto mb-4 overflow-hidden rounded-full">
+                  <Image
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-iS5NfWwQKwlzWudaAJumQffmTLTxLP.png"
+                    alt="장능인 상임이사"
+                    width={192}
+                    height={192}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <h4 className="text-xl font-semibold mb-2 text-white">
+                  {language === 'ko' ? '장능인' : language === 'en' ? 'Jang Neung-in' : 'チャン・ヌンイン'}
+                </h4>
+                <div className="space-y-1">
+                  <p className="text-sky-300">
+                    {language === 'ko' ? '미담장학회 상임이사' : language === 'en' ? 'Executive Director, Midam Scholarship Foundation' : '美談奨学会常任理事'}
+                  </p>
+                  <p className="text-sky-300">
+                    {language === 'ko' ? '서울특별시 사회적경제지원센터장' : language === 'en' ? 'Director, Seoul Social Economy Support Center' : 'ソウル特別市社会的経済支援センター長'}
+                  </p>
+                  <p className="text-sky-300">
+                    {language === 'ko' ? '충남대학교 겸임교수' : language === 'en' ? 'Adjunct Professor, Chungnam National University' : '忠南大学校兼任教授'}
+                  </p>
+                  <p className="text-sky-300">
+                    {language === 'ko' ? '울산대학교 겸임교수' : language === 'en' ? 'Adjunct Professor, University of Ulsan' : '蔚山大学校兼任教授'}
+                  </p>
+                  <div className="mt-4 text-sm text-gray-400 space-y-1">
+                    <p>{language === 'ko' ? 'KAIST 사회적기업가 MBA 졸업(경영학석사)' : language === 'en' ? 'M.B.A. in Social Entrepreneurship, KAIST' : 'KAIST社会的企業家MBA卒業（経営学修士）'}</p>
+                    <p>{language === 'ko' ? 'KAIST 전기및전자공학과 졸업(공학사)' : language === 'en' ? 'B.S. in Electrical and Electronic Engineering, KAIST' : 'KAIST電気電子工学科卒業（工学士）'}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+      </div>
+    </section>
 
-       {/* Keynote Speakers Section */}
-       <section className="py-16">
+
+      {/* Sessions Section */}
+      <section className="py-16 bg-black bg-opacity-50 backdrop-blur-sm">
+      <div className="max-w-4xl mx-auto px-4">
+        <h2 className="text-3xl font-bold mb-8 text-center text-white">
+          {language === 'ko' ? '세션' : language === 'en' ? 'Sessions' : 'セッション'}
+        </h2>
+        <h3 className="text-xl font-semibold mb-8 text-center text-white">
+          {language === 'ko' ? '청년의 시선으로 본 AI와 산업의 미래' : language === 'en' ? 'The Future of AI and Industry from Youth Perspective' : '若者の視点から見たAIと産業の未来'}
+        </h3>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <Card className="bg-gray-800 bg-opacity-50 border-gray-700 backdrop-blur-sm">
+            <CardContent className="p-4">
+              <h4 className="text-lg font-semibold mb-2 text-white">
+                {language === 'ko' ? '최정현' : language === 'en' ? 'Choi Jung-hyun' : 'チェ・ジョンヒョン'}
+              </h4>
+              <p className="text-sky-300 mb-2">
+                {language === 'ko' ? 'AI취창업혁신위원회 의장' : language === 'en' ? 'Chair, AI Employment and Startup Innovation Committee' : 'AI就創業革新委員会委員長'}
+              </p>
+              <p className="text-gray-300">
+                {language === 'ko' ? '"AI와 취·창업의 미래: 기회와 도전의 접점"' : language === 'en' ? '"The Future of AI in Employment and Startups: Intersection of Opportunities and Challenges"' : '"AIと就創業の未来：機会と挑戦の接点"'}
+              </p>
+            </CardContent>
+          </Card>
+          <Card className="bg-gray-800 bg-opacity-50 border-gray-700 backdrop-blur-sm">
+            <CardContent className="p-4">
+              <h4 className="text-lg font-semibold mb-2 text-white">
+                {language === 'ko' ? '이재권' : language === 'en' ? 'Lee Jae-kwon' : 'イ・ジェグォン'}
+              </h4>
+              <p className="text-sky-300 mb-2">
+                {language === 'ko' ? 'AI 홍보전략위원회 의장' : language === 'en' ? 'Chair, AI PR Strategy Committee' : 'AI広報戦略委員会委員長'}
+              </p>
+              <p className="text-gray-300">
+                {language === 'ko' ? '"초개인화의 시대: AI가 이끄는 맞춤형 미래"' : language === 'en' ? '"The Era of Hyper-personalization: AI-led Customized Future"' : '"超パーソナル化の時代：AIが導くカスタムメイドの未来"'}
+              </p>
+            </CardContent>
+          </Card>
+          <Card className="bg-gray-800 bg-opacity-50 border-gray-700 backdrop-blur-sm">
+            <CardContent className="p-4">
+              <h4 className="text-lg font-semibold mb-2 text-white">
+                {language === 'ko' ? '전성욱' : language === 'en' ? 'Jeon Seong-wook' : 'チョン・ソンウク'}
+              </h4>
+              <p className="text-sky-300 mb-2">
+                {language === 'ko' ? '사외이사' : language === 'en' ? 'Non-Executive Director' : '社外取締役'}
+              </p>
+              <p className="text-gray-300">
+                {language === 'ko' ? '"AI와 보험 산업의 융합: 미래 리스크 관리의 혁신"' : language === 'en' ? '"Convergence of AI and Insurance Industry: Innovation in Future Risk Management"' : '"AIと保険産業の融合：未来リスク管理の革新"'}
+              </p>
+            </CardContent>
+          </Card>
+          <Card className="bg-gray-800 bg-opacity-50 border-gray-700 backdrop-blur-sm">
+            <CardContent className="p-4">
+              <h4 className="text-lg font-semibold mb-2 text-white">
+                {language === 'ko' ? '채승민 (Shine)' : language === 'en' ? 'Chae Seung-min (Shine)' : 'チェ・スンミン (Shine)'}
+              </h4>
+              <p className="text-sky-300 mb-2">
+                {language === 'ko' ? '글로벌위원회 의장' : language === 'en' ? 'Chair, Global Committee' : 'グローバル委員会委員長'}
+              </p>
+              <p className="text-gray-300">
+                {language === 'ko' ? '"Future of Korea: Globalization"' : language === 'en' ? '"Future of Korea: Globalization"' : '"韓国の未来：グローバル化"'}
+              </p>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+    </section>
+
+
+      {/* Event Schedule Section */}
+      <section className="py-16">
         <div className="max-w-4xl mx-auto px-4">
           <h2 className="text-3xl font-bold mb-8 text-center">
-            {language === 'ko' ? '기조연설' : language === 'en' ? 'Keynote Speakers' : '基調講演'}
+            {language === 'ko' ? '행사 순서' : language === 'en' ? 'Event Schedule' : 'イベントスケジュール'}
           </h2>
           <Card className="bg-gray-800 bg-opacity-50 border-gray-700 backdrop-blur-sm">
             <CardContent className="p-6">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div className="text-center">
-                  <div className="w-48 h-48 mx-auto mb-4 overflow-hidden rounded-full">
-                    <Image
-                      src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-gdJgWbhjngLZRsgavDJhT5dSwFd3cu.png"
-                      alt="문형남 교수"
-                      width={192}
-                      height={192}
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  <h4 className="text-xl font-semibold mb-2 text-white">문형남</h4>
-                  <div className="space-y-1">
-                    <p className="text-sky-300">
-                      {language === 'ko' ? '숙명여대 글로벌융합대학 학장' : language === 'en' ? 'Dean, College of Global Convergence, Sookmyung Women\'s University' : '淑明女子大学グローバル融合大学学長'}
+              <div className="space-y-6">
+                <div className="flex flex-col md:flex-row justify-between items-center border-b border-gray-700 pb-4">
+                  <div className="text-left md:w-1/2">
+                    <h3 className="text-xl font-semibold text-white">
+                      {language === 'ko' ? '전문가 기조연설' : language === 'en' ? 'Expert Keynote Speech' : '専門家基調講演'}
+                    </h3>
+                    <p className="text-sky-300 mt-1">
+                      {language === 'ko' ? 'Expert Keynote Speech' : language === 'en' ? '전문가 기조연설' : '専門家基調講演'}
                     </p>
-                    <p className="text-sky-300">
-                      {language === 'ko' ? '한국AI 교육협회 회장' : language === 'en' ? 'President, Korea AI Education Association' : '韓国AI教育協会会長'}
-                    </p>
-                    <div className="mt-4 text-sm text-gray-400 space-y-1">
-                      <p>{language === 'ko' ? '성균관대학교 대학원 경영학 박사' : language === 'en' ? 'Ph.D. in Business Administration, Sungkyunkwan University' : '成均館大学大学院経営学博士'}</p>
-                      <p>{language === 'ko' ? 'KAIST 공학 박사 수료' : language === 'en' ? 'Completed Ph.D. coursework in Engineering, KAIST' : 'KAIST工学博士課程修了'}</p>
-                      <p>{language === 'ko' ? '고려대학교 대학원 경영학 석사' : language === 'en' ? 'M.B.A., Korea University' : '高麗大学大学院経営学修士'}</p>
-                      <p>{language === 'ko' ? '성균관대학교 경영학 학사' : language === 'en' ? 'B.B.A., Sungkyunkwan University' : '成均館大学経営学学士'}</p>
-                    </div>
                   </div>
+                  <p className="text-lg text-gray-300 mt-2 md:mt-0">19:00 - 20:00</p>
                 </div>
-                <div className="text-center">
-                  <div className="w-48 h-48 mx-auto mb-4 overflow-hidden rounded-full">
-                    <Image
-                      src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-iS5NfWwQKwlzWudaAJumQffmTLTxLP.png"
-                      alt="장능인 상임이사"
-                      width={192}
-                      height={192}
-                      className="w-full h-full object-cover"
-                    />
+                <div className="flex flex-col md:flex-row justify-between items-center border-b border-gray-700 pb-4">
+                  <div className="text-left md:w-1/2">
+                    <h3 className="text-xl font-semibold text-white">
+                      {language === 'ko' ? '청년들의 시선으로 본 AI 산업의 미래' : language === 'en' ? 'The Future of AI Industry from Youth\'s Perspective' : '若者の視点から見たAI産業の未来'}
+                    </h3>
+                    <p className="text-sky-300 mt-1">
+                      {language === 'ko' ? 'The Future of AI Industry from Youth\'s Perspective' : language === 'en' ? '청년들의 시선으로 본 AI 산업의 미래' : '若者の視点から見たAI産業の未来'}
+                    </p>
                   </div>
-                  <h4 className="text-xl font-semibold mb-2 text-white">장능인</h4>
-                  <div className="space-y-1">
-                    <p className="text-sky-300">
-                      {language === 'ko' ? '미담장학회 상임이사' : language === 'en' ? 'Executive Director, Midam Scholarship Foundation' : '美談奨学会常任理事'}
+                  <p className="text-lg text-gray-300 mt-2 md:mt-0">20:00 - 21:00</p>
+                </div>
+                <div className="flex flex-col md:flex-row justify-between items-center">
+                  <div className="text-left md:w-1/2">
+                    <h3 className="text-xl font-semibold text-white">
+                      {language === 'ko' ? '네트워킹' : language === 'en' ? 'Networking' : 'ネットワーキング'}
+                    </h3>
+                    <p className="text-sky-300 mt-1">
+                      {language === 'ko' ? 'Networking' : language === 'en' ? '네트워킹' : 'ネットワーキング'}
                     </p>
-                    <p className="text-sky-300">
-                      {language === 'ko' ? '서울특별시 사회적경제지원센터장' : language === 'en' ? 'Director, Seoul Social Economy Support Center' : 'ソウル特別市社会的経済支援センター長'}
-                    </p>
-                    <p className="text-sky-300">
-                      {language === 'ko' ? '충남대학교 겸임교수' : language === 'en' ? 'Adjunct Professor, Chungnam National University' : '忠南大学校兼任教授'}
-                    </p>
-                    <p className="text-sky-300">
-                      {language === 'ko' ? '울산대학교 겸임교수' : language === 'en' ? 'Adjunct Professor, University of Ulsan' : '蔚山大学校兼任教授'}
-                    </p>
-                    <div className="mt-4 text-sm text-gray-400 space-y-1">
-                      <p>{language === 'ko' ? 'KAIST 사회적기업가 MBA 졸업(경영학석사)' : language === 'en' ? 'M.B.A. in Social Entrepreneurship, KAIST' : 'KAIST社会的企業家MBA卒業（経営学修士）'}</p>
-                      <p>{language === 'ko' ? 'KAIST 전기및전자공학과 졸업(공학사)' : language === 'en' ? 'B.S. in Electrical and Electronic Engineering, KAIST' : 'KAIST電気電子工学科卒業（工学士）'}</p>
-                    </div>
                   </div>
+                  <p className="text-lg text-gray-300 mt-2 md:mt-0">21:00 - 22:00</p>
                 </div>
               </div>
             </CardContent>
@@ -263,54 +390,6 @@ export default function Component() {
         </div>
       </section>
 
-
-        {/* Event Schedule Section */}
-        <section className="py-16">
-          <div className="max-w-4xl mx-auto px-4">
-            <h2 className="text-3xl font-bold mb-8 text-center">
-              {language === 'ko' ? '행사 순서' : language === 'en' ? 'Event Schedule' : 'イベントスケジュール'}
-            </h2>
-            <Card className="bg-gray-800 bg-opacity-50 border-gray-700 backdrop-blur-sm">
-              <CardContent className="p-6">
-                <div className="space-y-6">
-                  <div className="flex flex-col md:flex-row justify-between items-center border-b border-gray-700 pb-4">
-                    <div className="text-left md:w-1/2">
-                      <h3 className="text-xl font-semibold text-white">
-                        {language === 'ko' ? '전문가 기조연설' : language === 'en' ? 'Expert Keynote Speech' : '専門家基調講演'}
-                      </h3>
-                      <p className="text-sky-300 mt-1">
-                        {language === 'ko' ? 'Expert Keynote Speech' : language === 'en' ? '전문가 기조연설' : '専門家基調講演'}
-                      </p>
-                    </div>
-                    <p className="text-lg text-gray-300 mt-2 md:mt-0">19:00 - 20:00</p>
-                  </div>
-                  <div className="flex flex-col md:flex-row justify-between items-center border-b border-gray-700 pb-4">
-                    <div className="text-left md:w-1/2">
-                      <h3 className="text-xl font-semibold text-white">
-                        {language === 'ko' ? '청년들의 시선으로 본 AI 산업의 미래' : language === 'en' ? 'The Future of AI Industry from Youth\'s Perspective' : '若者の視点から見たAI産業の未来'}
-                      </h3>
-                      <p className="text-sky-300 mt-1">
-                        {language === 'ko' ? 'The Future of AI Industry from Youth\'s Perspective' : language === 'en' ? '청년들의 시선으로 본 AI 산업의 미래' : '若者の視点から見たAI産業の未来'}
-                      </p>
-                    </div>
-                    <p className="text-lg text-gray-300 mt-2 md:mt-0">20:00 - 21:00</p>
-                  </div>
-                  <div className="flex flex-col md:flex-row justify-between items-center">
-                    <div className="text-left md:w-1/2">
-                      <h3 className="text-xl font-semibold text-white">
-                        {language === 'ko' ? '네트워킹' : language === 'en' ? 'Networking' : 'ネットワーキング'}
-                      </h3>
-                      <p className="text-sky-300 mt-1">
-                        {language === 'ko' ? 'Networking' : language === 'en' ? '네트워킹' : 'ネットワーキング'}
-                      </p>
-                    </div>
-                    <p className="text-lg text-gray-300 mt-2 md:mt-0">21:00 - 22:00</p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-        </section>
 
             {/* Venue Information */}
             <section className="py-16 bg-black bg-opacity-50 backdrop-blur-sm">
@@ -432,22 +511,43 @@ export default function Component() {
         </section>
 
      {/* Sponsors Section */}
-     <section className="py-16 bg-black bg-opacity-50 backdrop-blur-sm overflow-hidden">
-        <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-8 text-center">
-            {language === 'ko' ? '후원사' : language === 'en' ? 'Sponsors' : 'スポンサー'}
-          </h2>
-          <div className="sponsors-container relative whitespace-nowrap">
-            <div className="sponsors-content inline-flex space-x-8">
-              {[1, 2, 3, 4, 5].map((num) => (
-                <div key={num} className="inline-block">
-                  <Image src={`/placeholder.svg?height=100&width=200`} alt={`Sponsor ${num}`} width={200} height={100} className="mx-auto" />
-                </div>
-              ))}
-            </div>
+     <section className="py-16 bg-black bg-opacity-50 backdrop-blur-sm">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 className="text-3xl font-bold mb-12 text-center text-white">
+          {language === 'ko' ? '후원사' : language === 'en' ? 'Sponsors' : 'スポンサー'}
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-center justify-items-center">
+          <div className="w-full max-w-[200px] flex items-center justify-center">
+            <Image 
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-PjCyYDBf9WyBaZiwdj0VuOWMknZZjz.png" 
+              alt="이가추" 
+              width={200} 
+              height={150} 
+              className="w-full h-auto object-contain"
+            />
+          </div>
+          <div className="w-full max-w-[200px] flex items-center justify-center">
+            <Image 
+              src="https://daecheongse.co.kr/sponsor01.png" 
+              alt="YA 청년기획" 
+              width={200} 
+              height={150}
+              className="w-full h-auto object-contain" 
+            />
+          </div>
+          <div className="w-full h-full max-w-[200px] flex items-center justify-center">
+            <Image 
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-NeK3wv2lEZYjrg0kpgxHWVvNCF7QEU.png" 
+              alt="가감승제" 
+              width={200} 
+              height={150} 
+              className="w-full h-full object-cover" // 변경된 부분
+            />
           </div>
         </div>
-      </section>
+      </div>
+    </section>
+
 
       {/* Footer */}
       <footer className="bg-gray-800 py-8">
