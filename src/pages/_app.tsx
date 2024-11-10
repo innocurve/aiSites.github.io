@@ -127,8 +127,8 @@ export default function Component() {
         <meta name="description" content="미래전략포럼에 귀하를 초대합니다." />
         <meta property="og:title" content="Future Strategy Forum 2024" />
         <meta property="og:description" content="미래전략포럼에 귀하를 초대합니다." />
-        <meta property="og:image" content="https://raw.githubusercontent.com/JAEKWON0316/aiSites.github.io/main/public/dcsLogo.jpg" />
-        <meta property="og:url" content="https://jaekwon0316.github.io/aiSites.github.io" />
+        <meta property="og:image" content="https://daecheongse.co.kr/dcsLogo.jpg" />
+        <meta property="og:url" content="https://daecheongse.co.kr" />
         <meta property="og:type" content="website" />
       </Head>
     <div className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-blue-900 text-white relative overflow-hidden">
