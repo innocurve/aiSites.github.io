@@ -5,6 +5,7 @@ import Head from 'next/head'
 import { Globe, ChevronDown, Menu, ChevronUp } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
+import { useRouter } from 'next/router'
 import {
   Select,
   SelectContent,
@@ -120,13 +121,16 @@ export default function Component() {
 
   return (
     <>
-    <Head>
-      <title>Future Strategy Forum 2024</title>
-      <meta name="description" content="미래전략포럼에 귀하를 초대합니다." />
-      <meta property="og:title" content="Future Strategy Forum 2024" />
-      <meta property="og:description" content="미래전략포럼에 귀하를 초대합니다." />
-      <meta property="og:image" content="./dcsLogo.png" />
-    </Head>
+     <Head>
+        <meta charSet="utf-8" />
+        <title>Future Strategy Forum 2024</title>
+        <meta name="description" content="미래전략포럼에 귀하를 초대합니다." />
+        <meta property="og:title" content="Future Strategy Forum 2024" />
+        <meta property="og:description" content="미래전략포럼에 귀하를 초대합니다." />
+        <meta property="og:image" content="https://raw.githubusercontent.com/JAEKWON0316/aiSites.github.io/refs/heads/main/public/dcsLogo.jpg" />
+        <meta property="og:url" content="https://jaekwon0316.github.io/aiSites.github.io" />
+        <meta property="og:type" content="website" />
+      </Head>
     <div className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-blue-900 text-white relative overflow-hidden">
       <canvas id="backgroundCanvas" className="absolute top-0 left-0 w-full h-full pointer-events-none"></canvas>
       <div className="relative z-10">
@@ -162,7 +166,9 @@ export default function Component() {
             />
           </div>
           <h2 className="text-2xl md:text-3xl font-bold mb-4">Future Strategy Forum <span className="text-sky-300">2024</span></h2>
-          <h3 className="text-xl md:text-2xl font-bold mb-4">미래전략포럼에 귀하를 초대합니다.</h3>
+          <h3 className="text-xl md:text-2xl font-bold mb-4">
+          {language === 'ko' ? '미래전략포럼에 귀하를 초대합니다.' : language === 'en' ? 'We invite you to the Future Strategy Forum.' : 'フューチャー・ストラテジー・フォーラムにご招待します。'}
+         </h3>
           <p className="text-xl text-gray-400">2024. 12. 03, 19:00</p>
         </div>
 
