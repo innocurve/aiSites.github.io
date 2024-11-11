@@ -35,12 +35,27 @@ const FAQItem = ({ questionKo, answerKo, questionEn, answerEn, questionJa, answe
   );
 };
 
+const sponsors = [
+  { src: "https://daecheongse.co.kr/sponsor05.png", alt: "마라톤" },
+  { src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/sponsor07-YDEey6ZLPsEnuWdoT0ijklLKvv8NJP.png", alt: "청춘포털" },
+  { src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/sponsor06.jpg-y0D6ex090RxvtzLa8g8vzCCk2pMAlm.jpeg", alt: "OREUM COMPANY" },
+  { src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/sponsor08-UEGXZqAdNhmLcEfMQijaurCOmO1RAJ.png", alt: "INNOCURVE" },
+  { src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/sponsor02.jpg-RgodgY4c7fTuIaOJ0y08aBlLPyc7gf.jpeg", alt: "메리츠화재 RCM" },
+  { src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/sponsor04.png-wFOl1zvAEAx4HVRjAwdABS6cICXgXG.webp", alt: "JUDDANG" },
+  { src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/sponsor03.jpg-xiyGd9fGSkxvQ02AaHpfeFWKEZpN2B.jpeg", alt: "청춘정거장" },
+  { src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/sponsor01-YcHWx7T1PjzIdk68FliTh1iJYrIAZj.png", alt: "YA 청년기획" },
+  { src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-PjCyYDBf9WyBaZiwdj0VuOWMknZZjz.png", alt: "이가원" },
+  { src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-NeK3wv2lEZYjrg0kpgxHWVvNCF7QEU.png", alt: "가감승제" },
+]
+
 export default function Component() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [language, setLanguage] = useState<'ko' | 'en' | 'ja'>('ko')
   const [error, setError] = useState<string | null>(null)
+  const [currentIndex, setCurrentIndex] = useState(0)
+  const [visibleSponsors, setVisibleSponsors] = useState(sponsors.slice(0, 5))
 
-  useEffect(() => {
+  useEffect(() => {    
     try {
       const canvas = document.getElementById('backgroundCanvas') as HTMLCanvasElement;
       if (!canvas) {
@@ -110,6 +125,21 @@ export default function Component() {
       sponsorsContainer.classList.add('animate');
     }
   }, []);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setVisibleSponsors(prevSponsors => {
+        const nextSponsors = [...prevSponsors]
+        nextSponsors.shift()
+        const nextIndex = (sponsors.indexOf(prevSponsors[prevSponsors.length - 1]) + 1) % sponsors.length
+        nextSponsors.push(sponsors[nextIndex])
+        return nextSponsors
+      })
+    }, 3000)
+
+    return () => clearInterval(timer)
+  }, [])
+
 
   const toggleLanguage = () => {
     setLanguage(prev => prev === 'ko' ? 'en' : 'ko');
@@ -412,7 +442,7 @@ export default function Component() {
                     alt="대전 크리스탈 컨벤션 위치"
                     width = {1000}
                     height = {600}
-                    className="rounded-lg"
+                    className=""
                   />
                 </div>
               </div>
@@ -441,7 +471,7 @@ export default function Component() {
         <section className="py-16 bg-black bg-opacity-50 backdrop-blur-sm">
           <div className="max-w-4xl mx-auto px-4">
             <h2 className="text-3xl font-bold mb-8 text-center">
-              {language === 'ko' ? '자주 묻는 질문' : language === 'en' ? 'Frequently Asked Questions' : 'よくある質問'}
+              {language === 'ko' ? 'Q & A' : language === 'en' ? 'Frequently Asked Questions' : 'よくある質問'}
             </h2>
             <Card className="bg-gray-800 bg-opacity-50 border-gray-700 backdrop-blur-sm">
               <CardContent className="p-6">
@@ -510,45 +540,31 @@ export default function Component() {
           </div>
         </section>
 
-     {/* Sponsors Section */}
-     <section className="py-16 bg-black bg-opacity-50 backdrop-blur-sm">
+{/* Sponsors Section */}
+<section className="py-16 bg-black bg-opacity-50 backdrop-blur-sm overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-bold mb-12 text-center text-white">
           {language === 'ko' ? '후원사' : language === 'en' ? 'Sponsors' : 'スポンサー'}
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-center justify-items-center">
-          <div className="w-full max-w-[200px] flex items-center justify-center">
-            <Image 
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-PjCyYDBf9WyBaZiwdj0VuOWMknZZjz.png" 
-              alt="이가추" 
-              width={200} 
-              height={150} 
-              className="w-full h-auto object-contain"
-            />
-          </div>
-          <div className="w-full h-full max-w-[200px] flex items-center justify-center">
-            <Image 
-              src="https://daecheongse.co.kr/sponsor01.png" 
-              alt="YA 청년기획" 
-              width={200} 
-              height={200}
-              className="w-full h-full object-cotain" 
-            />
-          </div>
-          <div className="w-full h-full max-w-[200px] flex items-center justify-center">
-            <Image 
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-NeK3wv2lEZYjrg0kpgxHWVvNCF7QEU.png" 
-              alt="가감승제" 
-              width={200} 
-              height={150} 
-              className="w-full h-full object-cover" // 변경된 부분
-            />
+        <div className="relative">
+          <div className="flex transition-all duration-1000 ease-in-out">
+            {visibleSponsors.map((sponsor, index) => (
+              <div key={index} className="flex-shrink-0 w-1/5 px-2">
+                <div className="w-full h-[150px] bg-white rounded-lg flex items-center justify-center">
+                  <Image 
+                    src={sponsor.src}
+                    alt={sponsor.alt}
+                    width={180}
+                    height={80}
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
     </section>
-
-
       {/* Footer */}
       <footer className="bg-gray-800 py-8">
         <div className="max-w-4xl mx-auto px-4 text-center text-gray-300">
