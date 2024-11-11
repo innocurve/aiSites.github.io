@@ -542,29 +542,29 @@ export default function Component() {
 
 {/* Sponsors Section */}
 <section className="py-16 bg-black bg-opacity-50 backdrop-blur-sm overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-bold mb-12 text-center text-white">
-          {language === 'ko' ? '후원사' : language === 'en' ? 'Sponsors' : 'スポンサー'}
-        </h2>
-        <div className="relative">
-          <div className="flex transition-all duration-1000 ease-in-out">
-            {visibleSponsors.map((sponsor, index) => (
-              <div key={index} className="flex-shrink-0 w-1/5 px-2">
-                <div className="w-full h-[150px] bg-white rounded-lg flex items-center justify-center">
-                  <Image 
-                    src={sponsor.src}
-                    alt={sponsor.alt}
-                    width={180}
-                    height={80}
-                    className="w-full h-full object-contain"
-                  />
-                </div>
-              </div>
-            ))}
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 className="text-3xl font-bold mb-12 text-center text-white">
+      {language === 'ko' ? '후원사' : language === 'en' ? 'Sponsors' : 'スポンサー'}
+    </h2>
+    <div className="relative">
+      <div className="flex transition-all duration-1000 ease-in-out">
+        {visibleSponsors.map((sponsor, index) => (
+          <div key={index} className="flex-shrink-0 w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/5 px-2">
+            <div className="w-full h-[100px] sm:h-[120px] md:h-[150px] bg-white rounded-lg flex items-center justify-center">
+              <Image 
+                src={sponsor.src}
+                alt={sponsor.alt}
+                width={180}
+                height={80}
+                className="w-full h-full object-contain"
+              />
+            </div>
           </div>
-        </div>
+        ))}
       </div>
-    </section>
+    </div>
+  </div>
+</section>
       {/* Footer */}
       <footer className="bg-gray-800 py-8">
         <div className="max-w-4xl mx-auto px-4 text-center text-gray-300">
