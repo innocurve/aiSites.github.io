@@ -309,61 +309,89 @@ export default function Component() {
       <section className="py-16 bg-black bg-opacity-50 backdrop-blur-sm">
       <div className="max-w-4xl mx-auto px-4">
         <h2 className="text-3xl font-bold mb-8 text-center text-white">
-          {language === 'ko' ? '세션' : language === 'en' ? 'Sessions' : 'セッション'}
+          세션
         </h2>
         <h3 className="text-xl font-semibold mb-8 text-center text-white">
-          {language === 'ko' ? '청년의 시선으로 본 AI와 산업의 미래' : language === 'en' ? 'The Future of AI and Industry from Youth Perspective' : '若者の視点から見たAIと産業の未来'}
+          청년의 시선으로 본 AI와 산업의 미래
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <Card className="bg-gray-800 bg-opacity-50 border-gray-700 backdrop-blur-sm">
             <CardContent className="p-4">
               <h4 className="text-lg font-semibold mb-2 text-white">
-                {language === 'ko' ? '최정현' : language === 'en' ? 'Choi Jung-hyun' : 'チェ・ジョンヒョン'}
+                오승빈
               </h4>
+              <p className="text-white mb-1">
+                KAIST SoC
+              </p>
               <p className="text-sky-300 mb-2">
-                {language === 'ko' ? 'AI취창업혁신위원회 의장' : language === 'en' ? 'Chair, AI Employment and Startup Innovation Committee' : 'AI就創業革新委員会委員長'}
+                KAIST SPARCS 기획국장
               </p>
               <p className="text-gray-300">
-                {language === 'ko' ? '"AI와 취·창업의 미래: 기회와 도전의 접점"' : language === 'en' ? '"The Future of AI in Employment and Startups: Intersection of Opportunities and Challenges"' : '"AIと就創業の未来：機会と挑戦の接点"'}
+                "기술과 세대의 간극, 대학생이 이끄는 통합의 시대"
               </p>
             </CardContent>
           </Card>
           <Card className="bg-gray-800 bg-opacity-50 border-gray-700 backdrop-blur-sm">
             <CardContent className="p-4">
               <h4 className="text-lg font-semibold mb-2 text-white">
-                {language === 'ko' ? '이재권' : language === 'en' ? 'Lee Jae-kwon' : 'イ・ジェグォン'}
+                이재권
               </h4>
+              <p className="text-white mb-1">
+                풀스택 개발자
+              </p>
               <p className="text-sky-300 mb-2">
-                {language === 'ko' ? 'AI 홍보전략위원회 의장' : language === 'en' ? 'Chair, AI PR Strategy Committee' : 'AI広報戦略委員会委員長'}
+                홍보전략AI혁신위원회 의장
               </p>
               <p className="text-gray-300">
-                {language === 'ko' ? '"초개인화의 시대: AI가 이끄는 맞춤형 미래"' : language === 'en' ? '"The Era of Hyper-personalization: AI-led Customized Future"' : '"超パーソナル化の時代：AIが導くカスタムメイドの未来"'}
+                "초개인화의 시대: AI가 이끄는 맞춤형 미래"
               </p>
             </CardContent>
           </Card>
           <Card className="bg-gray-800 bg-opacity-50 border-gray-700 backdrop-blur-sm">
             <CardContent className="p-4">
               <h4 className="text-lg font-semibold mb-2 text-white">
-                {language === 'ko' ? '전성욱' : language === 'en' ? 'Jeon Seong-wook' : 'チョン・ソンウク'}
+                전성욱
               </h4>
+              <p className="text-white mb-1">
+                메리츠화재 RCM 본부장
+              </p>
               <p className="text-sky-300 mb-2">
-                {language === 'ko' ? '사외이사' : language === 'en' ? 'Non-Executive Director' : '社外取締役'}
+                사외이사
               </p>
               <p className="text-gray-300">
-                {language === 'ko' ? '"AI와 보험 산업의 융합: 미래 리스크 관리의 혁신"' : language === 'en' ? '"Convergence of AI and Insurance Industry: Innovation in Future Risk Management"' : '"AIと保険産業の融合：未来リスク管理の革新"'}
+                "AI와 보험 산업의 융합: 미래 리스크 관리의 혁신"
               </p>
             </CardContent>
           </Card>
           <Card className="bg-gray-800 bg-opacity-50 border-gray-700 backdrop-blur-sm">
             <CardContent className="p-4">
               <h4 className="text-lg font-semibold mb-2 text-white">
-                {language === 'ko' ? '채승민 (Shine)' : language === 'en' ? 'Chae Seung-min (Shine)' : 'チェ・スンミン (Shine)'}
+                채승민(Shine)
               </h4>
+              <p className="text-white mb-1">
+                University of South Florida
+              </p>
               <p className="text-sky-300 mb-2">
-                {language === 'ko' ? '글로벌위원회 의장' : language === 'en' ? 'Chair, Global Committee' : 'グローバル委員会委員長'}
+                글로벌위원회 의장
               </p>
               <p className="text-gray-300">
-                {language === 'ko' ? '"Future of Korea: Globalization"' : language === 'en' ? '"Future of Korea: Globalization"' : '"韓国の未来：グローバル化"'}
+                "Future of Korea: Globalization"
+              </p>
+            </CardContent>
+          </Card>
+          <Card className="bg-gray-800 bg-opacity-50 border-gray-700 backdrop-blur-sm">
+            <CardContent className="p-4">
+              <h4 className="text-lg font-semibold mb-2 text-white">
+                최정현
+              </h4>
+              <p className="text-white mb-1">
+                대전 청춘포털 센터장
+              </p>
+              <p className="text-sky-300 mb-2">
+                취창업AI혁신위원회 의장
+              </p>
+              <p className="text-gray-300">
+                "AI와 취·창업의 미래: 기회와 도전의 접점"
               </p>
             </CardContent>
           </Card>
