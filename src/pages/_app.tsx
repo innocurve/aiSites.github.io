@@ -309,70 +309,98 @@ export default function Component() {
       <section className="py-16 bg-black bg-opacity-50 backdrop-blur-sm">
       <div className="max-w-4xl mx-auto px-4">
         <h2 className="text-3xl font-bold mb-8 text-center text-white">
-          세션
+          {language === 'ko' ? '세션' : language === 'en' ? 'Sessions' : 'セッション'}
         </h2>
         <h3 className="text-xl font-semibold mb-8 text-center text-white">
-          청년의 시선으로 본 AI와 산업의 미래
+          {language === 'ko' 
+            ? '청년의 시선으로 본 AI와 산업의 미래' 
+            : language === 'en' 
+            ? 'The Future of AI and Industry from a Youth Perspective' 
+            : '若者の視点から見たAIと産業の未来'}
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <Card className="bg-gray-800 bg-opacity-50 border-gray-700 backdrop-blur-sm">
             <CardContent className="p-4">
               <h4 className="text-lg font-semibold mb-2 text-white">
-                오승빈
+                {language === 'ko' ? '오승빈' : language === 'en' ? 'Seungbin Oh' : 'オ・スンビン'}
               </h4>
               <p className="text-white mb-1">
                 KAIST SoC
               </p>
               <p className="text-sky-300 mb-2">
-                KAIST SPARCS 기획국장
+                {language === 'ko' 
+                  ? 'KAIST SPARCS 기획국장' 
+                  : language === 'en' 
+                  ? 'Planning Director, KAIST SPARCS' 
+                  : 'KAIST SPARCS 企画局長'}
               </p>
               <p className="text-gray-300">
-                "기술과 세대의 간극, 대학생이 이끄는 통합의 시대"
+                {language === 'ko' 
+                  ? '"기술과 세대의 간극, 대학생이 이끄는 통합의 시대"' 
+                  : language === 'en' 
+                  ? '"Bridging the Gap: The Era of Integration Led by University Students"' 
+                  : '"技術と世代のギャップ、大学生が導く統合の時代"'}
               </p>
             </CardContent>
           </Card>
           <Card className="bg-gray-800 bg-opacity-50 border-gray-700 backdrop-blur-sm">
             <CardContent className="p-4">
               <h4 className="text-lg font-semibold mb-2 text-white">
-                이재권
+                {language === 'ko' ? '이재권' : language === 'en' ? 'Jaekwon Lee' : 'イ・ジェグォン'}
               </h4>
               <p className="text-white mb-1">
-                풀스택 개발자
+                {language === 'ko' ? '풀스택 개발자' : language === 'en' ? 'Full Stack Developer' : 'フルスタック開発者'}
               </p>
               <p className="text-sky-300 mb-2">
-                홍보전략AI혁신위원회 의장
+                {language === 'ko' 
+                  ? '홍보전략AI혁신위원회 의장' 
+                  : language === 'en' 
+                  ? 'Chair, PR Strategy AI Innovation Committee' 
+                  : '広報戦略AI革新委員会 議長'}
               </p>
               <p className="text-gray-300">
-                "초개인화의 시대: AI가 이끄는 맞춤형 미래"
+                {language === 'ko' 
+                  ? '"초개인화의 시대: AI가 이끄는 맞춤형 미래"' 
+                  : language === 'en' 
+                  ? '"The Age of Hyper-Personalization: AI-Driven Customized Future"' 
+                  : '"超個人化の時代：AIが導くカスタマイズされた未来"'}
               </p>
             </CardContent>
           </Card>
           <Card className="bg-gray-800 bg-opacity-50 border-gray-700 backdrop-blur-sm">
             <CardContent className="p-4">
               <h4 className="text-lg font-semibold mb-2 text-white">
-                전성욱
+                {language === 'ko' ? '전성욱' : language === 'en' ? 'Sungwook Jeon' : 'ジョン・ソンウク'}
               </h4>
               <p className="text-white mb-1">
-                메리츠화재 RCM 본부장
+                {language === 'ko' 
+                  ? '메리츠화재 RCM 본부장' 
+                  : language === 'en' 
+                  ? 'Head of RCM Division, Meritz Fire & Marine Insurance' 
+                  : 'メリッツ火災 RCM本部長'}
               </p>
               <p className="text-sky-300 mb-2">
-                사외이사
+                {language === 'ko' ? '사외이사' : language === 'en' ? 'Outside Director' : '社外取締役'}
               </p>
               <p className="text-gray-300">
-                "AI와 보험 산업의 융합: 미래 리스크 관리의 혁신"
+                {language === 'ko' 
+                  ? '"AI와 보험 산업의 융합: 미래 리스크 관리의 혁신"' 
+                  : language === 'en' 
+                  ? '"Fusion of AI and Insurance Industry: Innovation in Future Risk Management"' 
+                  : '"AIと保険業界の融合：未来のリスク管理の革新"'}
               </p>
             </CardContent>
           </Card>
           <Card className="bg-gray-800 bg-opacity-50 border-gray-700 backdrop-blur-sm">
             <CardContent className="p-4">
               <h4 className="text-lg font-semibold mb-2 text-white">
-                채승민(Shine)
+                {language === 'ko' ? '채승민(Shine)' : language === 'en' ? 'Seungmin Chae (Shine)' : 'チェ・スンミン（Shine）'}
               </h4>
               <p className="text-white mb-1">
-                University of South Florida
+                {language === 'ko' ? 'University of South Florida' : language === 'en' ? 'University of South Florida' : 'サウスフロリダ大学'}
               </p>
               <p className="text-sky-300 mb-2">
-                글로벌위원회 의장
+                {language === 'ko' ? '글로벌위원회 의장' : language === 'en' ? 'Chair, Global Committee' : 'グローバル委員会 議長'}
               </p>
               <p className="text-gray-300">
                 "Future of Korea: Globalization"
@@ -382,16 +410,28 @@ export default function Component() {
           <Card className="bg-gray-800 bg-opacity-50 border-gray-700 backdrop-blur-sm">
             <CardContent className="p-4">
               <h4 className="text-lg font-semibold mb-2 text-white">
-                최정현
+                {language === 'ko' ? '최정현' : language === 'en' ? 'Junghyun Choi' : 'チェ・ジョンヒョン'}
               </h4>
               <p className="text-white mb-1">
-                대전 청춘포털 센터장
+                {language === 'ko' 
+                  ? '대전 청춘포털 센터장' 
+                  : language === 'en' 
+                  ? 'Director, Daejeon Youth Portal Center' 
+                  : '大田青春ポータルセンター長'}
               </p>
               <p className="text-sky-300 mb-2">
-                취창업AI혁신위원회 의장
+                {language === 'ko' 
+                  ? '취창업AI혁신위원회 의장' 
+                  : language === 'en' 
+                  ? 'Chair, Employment and Startup AI Innovation Committee' 
+                  : '就職創業AI革新委員会 議長'}
               </p>
               <p className="text-gray-300">
-                "AI와 취·창업의 미래: 기회와 도전의 접점"
+                {language === 'ko' 
+                  ? '"AI와 취·창업의 미래: 기회와 도전의 접점"' 
+                  : language === 'en' 
+                  ? '"The Future of AI in Employment and Startups: Intersection of Opportunities and Challenges"' 
+                  : '"AIと就職・創業の未来：機会と挑戦の接点"'}
               </p>
             </CardContent>
           </Card>
@@ -401,83 +441,46 @@ export default function Component() {
 
 
       {/* Event Schedule Section */}
-      <section className="py-16">
-        <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-8 text-center">
-            {language === 'ko' ? '행사 순서' : language === 'en' ? 'Event Schedule' : 'イベントスケジュール'}
-          </h2>
-          <Card className="bg-gray-800 bg-opacity-50 border-gray-700 backdrop-blur-sm">
-            <CardContent className="p-6">
-              <div className="space-y-6">
-                <div className="flex flex-col md:flex-row justify-between items-center border-b border-gray-700 pb-4">
-                  <div className="text-left md:w-1/2">
-                    <h3 className="text-xl font-semibold text-white">
-                      {language === 'ko' ? '전문가 기조연설' : language === 'en' ? 'Expert Keynote Speech' : '専門家基調講演'}
-                    </h3>
-                    <p className="text-sky-300 mt-1">
-                      {language === 'ko' ? 'Expert Keynote Speech' : language === 'en' ? '전문가 기조연설' : '専門家基調講演'}
-                    </p>
-                  </div>
-                  <p className="text-lg text-gray-300 mt-2 md:mt-0">19:00 - 20:00</p>
-                </div>
-                <div className="flex flex-col md:flex-row justify-between items-center border-b border-gray-700 pb-4">
-                  <div className="text-left md:w-1/2">
-                    <h3 className="text-xl font-semibold text-white">
-                      {language === 'ko' ? '청년들의 시선으로 본 AI 산업의 미래' : language === 'en' ? 'The Future of AI Industry from Youth\'s Perspective' : '若者の視点から見たAI産業の未来'}
-                    </h3>
-                    <p className="text-sky-300 mt-1">
-                      {language === 'ko' ? 'The Future of AI Industry from Youth\'s Perspective' : language === 'en' ? '청년들의 시선으로 본 AI 산업의 미래' : '若者の視点から見たAI産業の未来'}
-                    </p>
-                  </div>
-                  <p className="text-lg text-gray-300 mt-2 md:mt-0">20:00 - 21:00</p>
-                </div>
-                <div className="flex flex-col md:flex-row justify-between items-center">
-                  <div className="text-left md:w-1/2">
-                    <h3 className="text-xl font-semibold text-white">
-                      {language === 'ko' ? '네트워킹' : language === 'en' ? 'Networking' : 'ネットワーキング'}
-                    </h3>
-                    <p className="text-sky-300 mt-1">
-                      {language === 'ko' ? 'Networking' : language === 'en' ? '네트워킹' : 'ネットワーキング'}
-                    </p>
-                  </div>
-                  <p className="text-lg text-gray-300 mt-2 md:mt-0">21:00 - 22:00</p>
-                </div>
+      <section className="py-16 bg-black bg-opacity-50 backdrop-blur-sm">
+      <div className="max-w-4xl mx-auto px-4">
+        <h2 className="text-3xl font-bold mb-8 text-center">
+          {language === 'ko' ? '행사 장소' : language === 'en' ? 'Venue' : '会場'}
+        </h2>
+        <Card className="bg-gray-800 bg-opacity-50 border-gray-700 backdrop-blur-sm">
+          <CardContent className="p-6">
+            <div className="text-center space-y-4">
+              <h3 className="text-xl font-semibold text-white">
+                {language === 'ko' 
+                  ? '대전 마리드엘웨딩 6층 연회장' 
+                  : language === 'en' 
+                  ? 'Maried\'el Wedding Daejeon, 6th Floor Banquet Hall' 
+                  : '大田マリードエルウェディング6階宴会場'}
+              </h3>
+              <p className="text-sky-300">
+                {language === 'ko' 
+                  ? '대전 서구 만년로 69(만년동 337)' 
+                  : language === 'en' 
+                  ? '69 Mannyeon-ro, Seo-gu, Daejeon, South Korea (Mannyeon-dong 337)' 
+                  : '大韓民国大田広域市西区万年路69（万年洞337）'}
+              </p>
+              <div className="aspect-w-16 aspect-h-9 relative">
+                <Image
+                  src="https://daecheongse.co.kr/asdasd.png"
+                  alt={language === 'ko' 
+                    ? '대전 마리드엘웨딩 위치' 
+                    : language === 'en' 
+                    ? 'Maried\'el Wedding Daejeon location' 
+                    : '大田マリードエルウェディングの位置'}
+                  width={1000}
+                  height={600}
+                  className="object-cover"
+                />
               </div>
-            </CardContent>
-          </Card>
-        </div>
-      </section>
-
-
-            {/* Venue Information */}
-            <section className="py-16 bg-black bg-opacity-50 backdrop-blur-sm">
-        <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-8 text-center">
-            {language === 'ko' ? '행사 장소' : language === 'en' ? 'Venue' : '会場'}
-          </h2>
-          <Card className="bg-gray-800 bg-opacity-50 border-gray-700 backdrop-blur-sm">
-            <CardContent className="p-6">
-              <div className="text-center space-y-4">
-                <h3 className="text-xl font-semibold text-white">
-                  {language === 'ko' ? '대전 크리스탈 컨벤션 4층 연회장 (대전 서구 만년동 KBS 정문 앞)' : language === 'en' ? 'Crystal Convention Daejeon, 4th Floor Banquet Hall (In front of KBS main gate, Mannyeon-dong, Seo-gu, Daejeon)' : '大田クリスタルコンベンション4階宴会場（大田西区万年洞KBS正門前）'}
-                </h3>
-                <p className="text-sky-300">
-                  {language === 'ko' ? '대전광역시 서구 둔산대로 117번길 127' : language === 'en' ? '127, Dunsandaero 117beon-gil, Seo-gu, Daejeon, South Korea' : '大韓民国大田広域市西区遯山大路117番キル127'}
-                </p>
-                <div className="aspect-w-16 aspect-h-9 relative">
-                  <Image
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-6hf1vPQNb4u8RxplzbJYya9gp1rGfj.png"
-                    alt="대전 크리스탈 컨벤션 위치"
-                    width = {1000}
-                    height = {600}
-                    className=""
-                  />
-                </div>
-              </div>
-            </CardContent>
-            </Card>
-          </div>
-        </section>
+            </div>
+          </CardContent>
+        </Card>
+      </div>
+    </section>
 
         {/* Vision Section */}
         <section className="py-16">
