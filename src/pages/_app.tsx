@@ -46,6 +46,7 @@ const sponsors = [
   { src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/sponsor01-YcHWx7T1PjzIdk68FliTh1iJYrIAZj.png", alt: "YA 청년기획" },
   { src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-PjCyYDBf9WyBaZiwdj0VuOWMknZZjz.png", alt: "이가원" },
   { src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-NeK3wv2lEZYjrg0kpgxHWVvNCF7QEU.png", alt: "가감승제" },
+  { src: "https://daecheongse.co.kr/sponsor09.jpg", alt: "게하" }
 ]
 
 export default function Component() {
@@ -535,12 +536,12 @@ export default function Component() {
                 />
                 <FAQItem 
                   questionKo="비용이 얼마인가요?" 
-                  answerKo="본 행사는 무료로 진행됩니다. 다만, 사전 등록이 필요하며 좌석이 한정되어 있어 조기 마감될 수 있습니다."
-                  questionEn="How much does it cost?"
-                  answerEn="This event is free of charge. However, pre-registration is required, and seats are limited, so registration may close early."
-                  questionJa="費用はいくらですか？"
-                  answerJa="このイベントは無料です。ただし、事前登録が必要であり、座席数に限りがあるため、早期締め切りとなる可能性があります。"
-                  language={language}
+                  answerKo="본 행사는 정회원의 추천을 통해 초청된 분들에 한해 진행됩니다. 사전 등록이 필수이며, 좌석이 한정되어 있어 조기 마감될 수 있습니다." 
+                  questionEn="How much does it cost?" 
+                  answerEn="This event is exclusively for those invited through recommendations from regular members. Pre-registration is mandatory, and due to limited seating, registration may close early." 
+                  questionJa="費用はいくらですか？" 
+                  answerJa="このイベントは正会員の推薦を通じて招待された方のみを対象に実施されます。事前登録が必須であり、座席数に限りがあるため、早期締め切りとなる可能性があります。" 
+                  language={language} 
                 />
                 <FAQItem 
                   questionKo="주차 가능한가요?" 
@@ -551,15 +552,15 @@ export default function Component() {
                   answerJa="はい、会場内に駐車場があります。ただし、駐車スペースに限りがあるため、可能な限り公共交通機関をご利用ください。"
                   language={language}
                 />
-                <FAQItem 
-                  questionKo="식사는 제공되나요?" 
-                  answerKo="네, 행사 중 간단한 식사가 제공됩니다. 참석자들이 네트워킹하며 편안한 분위기 속에서 식사를 즐기실 수 있도록 준비될 예정입니다."
-                  questionEn="Will meals be provided?"
-                  answerEn="Yes, light meals will be provided during the event. We will prepare for attendees to enjoy their meals in a comfortable atmosphere while networking."
-                  questionJa="食事は提供されますか？"
-                  answerJa="はい、イベント中に軽食を提供します。参加者の方々がネットワーキングを楽しみながら、快適な雰囲気の中で食事を楽しめるように準備します。"
-                  language={language}
-                />
+               <FAQItem 
+               questionKo="식사는 제공되나요?" 
+               answerKo="본 행사에서는 정성스럽게 준비된 케이터링이 제공됩니다. 참석자들이 네트워킹하며 편안하고 품격 있는 분위기 속에서 즐기실 수 있도록 마련될 예정입니다." 
+               questionEn="Will meals be provided?" 
+               answerEn="Carefully prepared catering will be provided at this event. It will be arranged for attendees to enjoy in a comfortable and elegant atmosphere while networking." 
+               questionJa="食事は提供されますか？" 
+               answerJa="このイベントでは、丁寧に準備されたケータリングが提供されます。参加者の方々がネットワーキングを楽しみながら、快適で品格のある雰囲気の中で楽しめるよう準備される予定です。" 
+               language={language} 
+               />
                 <div className="mt-6 text-center">
                   <p className="text-white">
                     {language === 'ko' ? '기타 문의사항은 사무처로 연락 주시기 바랍니다.' : language === 'en' ? 'For any other inquiries, please contact our office.' : 'その他のお問い合わせは事務局までご連絡ください。'}
