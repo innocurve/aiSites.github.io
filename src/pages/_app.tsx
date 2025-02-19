@@ -154,13 +154,21 @@ export default function Component() {
     <>
      <Head>
         <meta charSet="utf-8" />
-        <title>Future Strategy Forum 2024</title>
-        <meta name="description" content="미래전략포럼에 귀하를 초대합니다." />
-        <meta property="og:title" content="Future Strategy Forum 2024" />
-        <meta property="og:description" content="미래전략포럼에 귀하를 초대합니다." />
+        <title>AIGF 2025: 모두를 위한 AI와 디지털 미래</title>
+        <meta name="description" content="디지털 미래 세미나에 귀하를 초대합니다." />
+        
+        {/* Open Graph / Facebook */}
+        <meta property="og:title" content="AIGF 2025: 모두를 위한 AI와 디지털 미래" />
+        <meta property="og:description" content="디지털 미래 세미나에 귀하를 초대합니다." />
         <meta property="og:image" content="https://daecheongse.co.kr/dcsLogo.jpg" />
         <meta property="og:url" content="https://daecheongse.co.kr" />
         <meta property="og:type" content="website" />
+        
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="AIGF 2025: 모두를 위한 AI와 디지털 미래" />
+        <meta name="twitter:description" content="디지털 미래 세미나에 귀하를 초대합니다." />
+        <meta name="twitter:image" content="https://daecheongse.co.kr/dcsLogo.jpg" />
       </Head>
     <div className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-blue-900 text-white relative overflow-hidden">
       <canvas id="backgroundCanvas" className="absolute top-0 left-0 w-full h-full pointer-events-none"></canvas>
