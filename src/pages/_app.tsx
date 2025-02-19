@@ -196,11 +196,11 @@ export default function Component() {
               className="mx-auto w-full max-w-[400px] h-auto"
             />
           </div>
-          <h2 className="text-2xl md:text-3xl font-bold mb-4">Future Strategy Forum <span className="text-sky-300">2024</span></h2>
+          <h2 className="text-2xl md:text-3xl font-bold mb-4">AIGF <span className="text-sky-300">2025</span>: 모두를 위한 AI와 디지털 미래 </h2>
           <h3 className="text-xl md:text-2xl font-bold mb-4">
-          {language === 'ko' ? '미래전략포럼에 귀하를 초대합니다.' : language === 'en' ? 'We invite you to the Future Strategy Forum.' : 'フューチャー・ストラテジー・フォーラムにご招待します。'}
+          {language === 'ko' ? '디지털 미래 세미나에 귀하를 초대합니다.' : language === 'en' ? 'We invite you to the Future Strategy Forum.' : 'フューチャー・ストラテジー・フォーラムにご招待します。'}
          </h3>
-          <p className="text-xl text-gray-400 font-bold">2024. 12. 03, 19:00</p>
+          <p className="text-xl text-gray-400 font-bold">2025. 03. 09, 14:00</p>
         </div>
 
      {/* Introduction Section */}
@@ -215,7 +215,7 @@ export default function Component() {
             </h2>
             <p className="text-gray-300 text-center leading-relaxed">
               {language === 'ko'
-                ? '미래전략포럼은 급변하는 미래 시대의 기술 혁신 속에서 청년들이 뒤처지지 않도록 인식 격차를 해소하고, 더 나아가 혁신적 변화를 주도하는 것을 목표로 합니다.'
+                ? 'AIGF 2025 세미나는 급변하는 AI와 디지털 미래의 물결 속에서 청년 및 산업계가 뒤처지지 않도록 인식 격차를 해소하고, 혁신적 변화를 선도할 수 있는 전략적 인사이트를 공유하는 자리입니다. 최신 AI 기술 동향과 각 분야의 적용 사례를 통해 미래를 준비하고, 함께 성장하는 기회를 제공하고자 합니다. 여러분의 적극적인 참여를 기대합니다.'
                 : language === 'en'
                 ? 'The Future Strategy Forum aims to bridge the perception gap and lead innovative changes, ensuring that young people do not fall behind in the rapidly evolving technological innovations of the future era.'
                 : '未来戦略フォーラムは、急速に変化する未来時代の技術革新の中で、若者が遅れを取らないように認識のギャップを解消し、さらに革新的な変化を主導することを目指しています。'}
@@ -436,52 +436,226 @@ export default function Component() {
               </p>
             </CardContent>
           </Card>
+          <Card className="bg-gray-800 bg-opacity-50 border-gray-700 backdrop-blur-sm">
+            <CardContent className="p-4">
+              <h4 className="text-lg font-semibold mb-2 text-white">
+                {language === 'ko' ? '채승민(Shine)' : language === 'en' ? 'Seungmin Chae (Shine)' : 'チェ・スンミン（Shine）'}
+              </h4>
+              <p className="text-white mb-1">
+                {language === 'ko' ? 'University of South Florida' : language === 'en' ? 'University of South Florida' : 'サウスフロリダ大学'}
+              </p>
+              <p className="text-sky-300 mb-2">
+                {language === 'ko' ? '글로벌위원회 의장' : language === 'en' ? 'Chair, Global Committee' : 'グローバル委員会 議長'}
+              </p>
+              <p className="text-gray-300">
+                "Future of Korea: Globalization"
+              </p>
+            </CardContent>
+          </Card>
         </div>
       </div>
     </section>
 
 
       {/* Event Schedule Section */}
-      <section className="py-16 bg-black bg-opacity-50 backdrop-blur-sm">
-      <div className="max-w-4xl mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-8 text-center">
-          {language === 'ko' ? '행사 장소' : language === 'en' ? 'Venue' : '会場'}
-        </h2>
-        <Card className="bg-gray-800 bg-opacity-50 border-gray-700 backdrop-blur-sm">
-          <CardContent className="p-6">
-            <div className="text-center space-y-4">
-              <h3 className="text-xl font-semibold text-white">
-                {language === 'ko' 
-                  ? '대전 마리드엘웨딩 6층 연회장' 
-                  : language === 'en' 
-                  ? 'Maried\'el Wedding Daejeon, 6th Floor Banquet Hall' 
-                  : '大田マリードエルウェディング6階宴会場'}
-              </h3>
-              <p className="text-sky-300">
-                {language === 'ko' 
-                  ? '대전 서구 만년로 69(만년동 337)' 
-                  : language === 'en' 
-                  ? '69 Mannyeon-ro, Seo-gu, Daejeon, South Korea (Mannyeon-dong 337)' 
-                  : '大韓民国大田広域市西区万年路69（万年洞337）'}
-              </p>
-              <div className="aspect-w-16 aspect-h-9 relative">
-                <Image
-                  src="https://daecheongse.co.kr/asdasd.png"
-                  alt={language === 'ko' 
-                    ? '대전 마리드엘웨딩 위치' 
-                    : language === 'en' 
-                    ? 'Maried\'el Wedding Daejeon location' 
-                    : '大田マリードエルウェディングの位置'}
-                  width={1000}
-                  height={600}
-                  className="object-cover"
-                />
+      <section className="py-16">
+        <div className="max-w-4xl mx-auto px-4">
+          <h2 className="text-3xl font-bold mb-8 text-center">
+            {language === 'ko' ? '프로그램 일정' : language === 'en' ? 'Event Schedule' : 'プログラムスケジュール'}
+          </h2>
+          <Card className="bg-gray-800 bg-opacity-50 border-gray-700 backdrop-blur-sm">
+            <CardContent className="p-6">
+              <div className="space-y-8">
+                {/* Part 1 */}
+                <div>
+                  <h3 className="text-xl font-semibold mb-4 text-sky-300">
+                    {language === 'ko' 
+                      ? '1부: 개회, 기조연설, 벤처캐피탈 시각, 후원사 홍보' 
+                      : language === 'en' 
+                      ? 'Part 1: Opening, Keynote Speeches, VC Perspective, Sponsor Presentation'
+                      : '第1部：開会、基調講演、ベンチャーキャピタル視点、スポンサー紹介'}
+                  </h3>
+                  <div className="space-y-2">
+                    <div className="grid grid-cols-5 gap-4">
+                      <div className="text-gray-400">14:00 - 14:10</div>
+                      <div className="col-span-4">
+                        {language === 'ko' 
+                          ? '개회식 및 사회자 인사' 
+                          : language === 'en' 
+                          ? 'Opening Ceremony and MC Introduction'
+                          : '開会式と司会者挨拶'}
+                      </div>
+                      <div className="text-gray-400">14:10 - 14:20</div>
+                      <div className="col-span-4">
+                        {language === 'ko' 
+                          ? '축사 (연사 미정)' 
+                          : language === 'en' 
+                          ? 'Congratulatory Speech (TBA)'
+                          : '祝辞（講演者未定）'}
+                      </div>
+                      <div className="text-gray-400">14:20 - 14:35</div>
+                      <div className="col-span-4">
+                        {language === 'ko' 
+                          ? '기조연설 1: AI와 기업의 미래 (연사 미정)' 
+                          : language === 'en' 
+                          ? 'Keynote Speech 1: AI and the Future of Business (TBA)'
+                          : '基調講演1：AIと企業の未来（講演者未定）'}
+                      </div>
+                      <div className="text-gray-400">14:35 - 14:50</div>
+                      <div className="col-span-4">
+                        {language === 'ko' 
+                          ? '기조연설 2: AI와 노동의 미래 (연사 미정)' 
+                          : language === 'en' 
+                          ? 'Keynote Speech 2: AI and the Future of Labor (TBA)'
+                          : '基調講演2：AIと労働の未来（講演者未定）'}
+                      </div>
+                      <div className="text-gray-400">14:50 - 15:05</div>
+                      <div className="col-span-4">
+                        {language === 'ko' 
+                          ? '기조연설 3: 디지털 교과서와 AI의 미래 (연사 미정)' 
+                          : language === 'en' 
+                          ? 'Keynote Speech 3: Digital Textbooks and the Future of AI (TBA)'
+                          : '基調講演3：デジタル教科書とAIの未来（講演者未定）'}
+                      </div>
+                      <div className="text-gray-400">15:05 - 15:20</div>
+                      <div className="col-span-4">
+                        {language === 'ko' 
+                          ? '벤처캐피탈이 바라보는 AI 산업의 현재와 기회 (벤처캐피탈 전문가)' 
+                          : language === 'en' 
+                          ? 'Current State and Opportunities in AI Industry from VC Perspective (VC Expert)'
+                          : 'ベンチャーキャピタルから見たAI産業の現在と機会（VC専門家）'}
+                      </div>
+                      <div className="text-gray-400">15:20 - 15:35</div>
+                      <div className="col-span-4">
+                        {language === 'ko' 
+                          ? '후원사 홍보: 이노커브의 AI 솔루션과 비전 (이노커브 부사장)' 
+                          : language === 'en' 
+                          ? 'Sponsor Presentation: INNOCURVE\'s AI Solutions and Vision (Vice President, INNOCURVE)'
+                          : 'スポンサー紹介：イノカーブのAIソリューションとビジョン（イノカーブ副社長）'}
+                      </div>
+                      <div className="text-gray-400">15:35 - 15:50</div>
+                      <div className="col-span-4">
+                        {language === 'ko' 
+                          ? '휴식 (Coffee Break)' 
+                          : language === 'en' 
+                          ? 'Break (Coffee Break)'
+                          : '休憩（コーヒーブレイク）'}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Part 2 */}
+                <div>
+                  <h3 className="text-xl font-semibold mb-4 text-sky-300">
+                    {language === 'ko' 
+                      ? '2부: 산업별 AI 적용 사례' 
+                      : language === 'en' 
+                      ? 'Part 2: Industry-specific AI Applications'
+                      : '第2部：産業別AI適用事例'}
+                  </h3>
+                  <div className="space-y-2">
+                    <div className="grid grid-cols-5 gap-4">
+                      <div className="text-gray-400">15:50 - 16:05</div>
+                      <div className="col-span-4">
+                        {language === 'ko' 
+                          ? '산업별 AI 도입과 적용 사례 ① (부동산 및 건축 산업)' 
+                          : language === 'en' 
+                          ? 'AI Implementation Case Study ① (Real Estate & Construction)'
+                          : '産業別AI導入と適用事例 ①（不動産・建築産業）'}
+                      </div>
+                      <div className="text-gray-400">16:05 - 16:20</div>
+                      <div className="col-span-4">
+                        {language === 'ko' 
+                          ? '산업별 AI 도입과 적용 사례 ② (서비스업)' 
+                          : language === 'en' 
+                          ? 'AI Implementation Case Study ② (Service Industry)'
+                          : '産業別AI導入と適用事例 ②（サービス業）'}
+                      </div>
+                      <div className="text-gray-400">16:20 - 16:35</div>
+                      <div className="col-span-4">
+                        {language === 'ko' 
+                          ? '산업별 AI 도입과 적용 사례 ③ (유통업)' 
+                          : language === 'en' 
+                          ? 'AI Implementation Case Study ③ (Distribution Industry)'
+                          : '産業別AI導入と適用事例 ③（流通業）'}
+                      </div>
+                      <div className="text-gray-400">16:35 - 16:50</div>
+                      <div className="col-span-4">
+                        {language === 'ko' 
+                          ? '산업별 AI 도입과 적용 사례 ④ (교육)' 
+                          : language === 'en' 
+                          ? 'AI Implementation Case Study ④ (Education)'
+                          : '産業別AI導入と適用事例 ④（教育）'}
+                      </div>
+                      <div className="text-gray-400">16:50 - 17:00</div>
+                      <div className="col-span-4">
+                        {language === 'ko' 
+                          ? '폐회 및 네트워킹' 
+                          : language === 'en' 
+                          ? 'Closing and Networking'
+                          : '閉会とネットワーキング'}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="text-center mt-6">
+                  <p className="text-gray-300">
+                    {language === 'ko' 
+                      ? '※ 일정은 변경될 수 있습니다.' 
+                      : language === 'en' 
+                      ? '※ Schedule is subject to change.'
+                      : '※ スケジュールは変更される可能性があります。'}
+                  </p>
+                </div>
               </div>
-            </div>
-          </CardContent>
-        </Card>
-      </div>
-    </section>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
+        {/* Venue Section */}
+        <section className="py-16 bg-black bg-opacity-50 backdrop-blur-sm">
+          <div className="max-w-4xl mx-auto px-4">
+            <h2 className="text-3xl font-bold mb-8 text-center">
+              {language === 'ko' ? '행사 장소' : language === 'en' ? 'Venue' : '会場'}
+            </h2>
+            <Card className="bg-gray-800 bg-opacity-50 border-gray-700 backdrop-blur-sm">
+              <CardContent className="p-6">
+                <div className="text-center space-y-4">
+                  <h3 className="text-xl font-semibold text-white">
+                    {language === 'ko' 
+                      ? '대전 DCC 컨퍼런스룸' 
+                      : language === 'en' 
+                      ? 'Maried\'el Wedding Daejeon, 6th Floor Banquet Hall' 
+                      : '大田マリードエルウェディング6階宴会場'}
+                  </h3>
+                  <p className="text-sky-300">
+                    {language === 'ko' 
+                      ? '대전 유성구 도룡동 4-19' 
+                      : language === 'en' 
+                      ? '69 Mannyeon-ro, Seo-gu, Daejeon, South Korea (Mannyeon-dong 337)' 
+                      : '大韓民国大田広域市西区万年路69（万年洞337）'}
+                  </p>
+                  <div className="aspect-w-16 aspect-h-9 relative">
+                    <Image
+                      src="https://daecheongse.co.kr/map001.png"
+                      alt={language === 'ko' 
+                        ? '대전 DCC 위치' 
+                        : language === 'en' 
+                        ? 'Maried\'el Wedding Daejeon location' 
+                        : '大田マリードエルウェディングの位置'}
+                      width={1000}
+                      height={600}
+                      className="object-cover"
+                    />
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </section>
 
         {/* Vision Section */}
         <section className="py-16">
@@ -491,7 +665,7 @@ export default function Component() {
             </h2>
             <p className="text-gray-300 leading-relaxed">
               {language === 'ko' 
-                ? '우리 사단법인은 기술 혁신과 청년들의 인식 사이의 간극을 해소하고, 이를 통해 미래를 선도할 인재를 양성하는 데에 중점을 두고 있습니다. 청년들이 시대에 맞는 통찰과 역량을 갖추어 변화의 주역이 될 수 있도록 돕고, 혁신적 성장을 이끌어낼 수 있는 기반을 마련하겠습니다.'
+                ? 'AI 기술이 산업과 사회 전반에 걸쳐 미치는 영향은 더욱 커지고 있으며, 기업, 노동 시장, 교육 등 다양한 분야에서 혁신적인 변화가 이루어지고 있습니다. 이번 세미나는 AI의 현재와 미래, 각 산업에서의 활용 사례, 디지털 교육 혁신 등을 중심으로 전문가들과 함께 논의하는 자리입니다. AI와 디지털 미래를 선도하는 인사이트를 공유하고, 업계 관계자들과 네트워킹할 수 있는 뜻깊은 기회가 될 것입니다. 부디 참석하셔서 자리를 빛내주시길 바랍니다. 감사합니다.'
                 : language === 'en'
                 ? 'Our organization focuses on bridging the gap between technological innovation and youth perception, aiming to nurture future leaders. We strive to help young people acquire the insights and capabilities needed for their era, enabling them to become agents of change and laying the foundation for innovative growth.'
                 : '私たちの団体は、技術革新と若者の認識のギャップを解消し、未来をリードする人材育成に重点を置いています。若者が時代に応じた洞察力と能力を備え、変化の主役になれるよう支援し、革新的な成長を促す基盤を築きます。'}
@@ -527,7 +701,7 @@ export default function Component() {
                 />
                 <FAQItem 
                   questionKo="행사 일정은 어떻게 되나요?" 
-                  answerKo="행사는 2024년 12월 3일 오후 7시부터 약 3시간 동안 진행될 예정입니다. 세부 일정은 추후 공지될 예정입니다."
+                  answerKo="행사는 2025년 3월 9일 오후 2시부터 약 3시간 동안 진행될 예정입니다. 세부 일정은 추후 공지될 예정입니다."
                   questionEn="What is the event schedule?"
                   answerEn="The event is scheduled to take place on December 3, 2024, from 7 PM for about 3 hours. Detailed schedule will be announced later."
                   questionJa="イベントスケジュールは？"
