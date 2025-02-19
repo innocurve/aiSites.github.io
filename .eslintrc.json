@@ -4,7 +4,7 @@
     "next/core-web-vitals"
   ],
   "rules": {
-    // 필요한 경우 특정 규칙 커스터마이징
+    "react/no-unescaped-entities": "off"
   },
   "settings": {
     "next": {
